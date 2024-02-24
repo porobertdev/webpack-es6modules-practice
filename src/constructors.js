@@ -32,4 +32,8 @@ function createMap(name, size) {
 export {
     Player,
     createMap
+};
+
+export default function anonymous() {
+    console.log("I'm an exported anonymous function");
 }
