@@ -1,4 +1,10 @@
+@font-face {
+    font-family: 'NotoSans';
+    src: url(./fonts/notosans.ttf);
+}
+
 .hello {
     color: red;
     background: url('./img/nasa-img.jpg');
+    font-family: 'NotoSans';
 }
