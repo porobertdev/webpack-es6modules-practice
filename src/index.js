@@ -1,6 +1,7 @@
 // import lodash module/package
 import _ from 'lodash';
 import './style.css';
+import NasaImg from './img/nasa-img.jpg';
 
 import { functionOne } from './functionOne';
 import { Player, createMap } from './constructors';
@@ -22,6 +23,11 @@ function component() {
     // Lodash, currently included via a script, is required for this line to work
     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
     element.classList.add('hello');
+
+    // add image
+    const img = new Image();
+    img.src = NasaImg;
+    element.appendChild(img);
 
     return element;
 }

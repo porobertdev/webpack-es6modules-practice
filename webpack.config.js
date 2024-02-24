@@ -13,6 +13,10 @@ module.exports = {
                 use: ['style-loader', 'css-loader']
                 // this is supposed to cause errors bcoz it's no in the correct order:
                 // use: ['css-loader', 'style-loader']
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource'
             }
         ]
     }
