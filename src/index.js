@@ -1,5 +1,7 @@
 // import lodash module/package
 import _ from 'lodash';
+import './style.css';
+
 import { functionOne } from './functionOne';
 import { Player, createMap } from './constructors';
 import myName from './myName';
@@ -19,7 +21,8 @@ function component() {
   
     // Lodash, currently included via a script, is required for this line to work
     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
+    element.classList.add('hello');
+
     return element;
 }
   
