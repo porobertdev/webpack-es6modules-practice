@@ -9,7 +9,7 @@ import json from './data.json5';
   cause an error that can be tracked using Source Maps
   it points to the correct js file instead to the bundle.js
 */
-conzole.log('hllhllh');
+// conzole.log('hllhllh');
 
 export { 
     Data,

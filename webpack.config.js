@@ -11,11 +11,18 @@ module.exports = {
     mode: 'development',
     entry: './src/index.js',
     devtool: 'inline-source-map',
+    devServer: {
+        static: './src',
+    },
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true
     },
+    // needed if there's multiple entry points
+    // optimization: {
+    //     runtimeChunk: 'single'
+    // },
     module: {
         rules: [
             {
