@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebpack_demo=self.webpackChunkwebpack_demo||[]).push([[290],{290:(a,e,o)=>{o.r(e),o(626);var c=o(351);console.log(`barrel: ${c.ai}`),new c.ai("Naruto",50,"Konoha").attack()}}]);

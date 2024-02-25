@@ -5,24 +5,14 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const toml = require('toml');
 const yaml = require('yamljs');
 const json5 = require('json5');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
     entry: './src/index.js',
-    devtool: 'inline-source-map',
-    devServer: {
-        static: './src',
-    },
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true
     },
-    // needed if there's multiple entry points
-    // optimization: {
-    //     runtimeChunk: 'single'
-    // },
     module: {
         rules: [
             {
@@ -67,7 +57,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
+        new htmlWebpackPlugin({
             title: 'Development - Webpack Docs Tutorial',
             inject: 'head',
             scriptLoading: 'defer',
