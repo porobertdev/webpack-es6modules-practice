@@ -2,12 +2,8 @@
 import _ from 'lodash';
 import './style.css';
 import NasaImg from './img/nasa-img.jpg';
-import Data from './data/data.xml';
-import Notes from './data/data.csv';
-import DataJSON from './data/data.json';
-import toml from './data/data.toml';
-import yaml from './data/data.yaml';
-import json from './data/data.json5';
+// import * as DataFiles from './data/data.js';
+import { Data, Notes, DataJSON, toml, yaml, json} from './data/data.js';
 
 import { functionOne } from './functionOne';
 import { Player, createMap } from './constructors';
