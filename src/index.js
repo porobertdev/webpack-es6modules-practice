@@ -19,6 +19,11 @@ import('./re-exporting/main.js');
 // side-effect import
 import './sideEffect.js';
 
+if (process.env.NODE_ENV != 'production') {
+    alert('Development mode');
+} else {
+    alert('Production mode')
+}
 
 [toml, yaml, json].forEach( data => console.log(data));
 
