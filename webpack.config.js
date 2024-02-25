@@ -1,7 +1,11 @@
 const path = require('path');
+const htmlWebpackPlugin = require('html-webpack-plugin');
+
+// data
 const toml = require('toml');
 const yaml = require('yamljs');
 const json5 = require('json5');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -51,5 +55,12 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Testing html-webpack-plugin',
+            inject: 'head',
+            scriptLoading: 'defer'
+        })
+    ]
 };
