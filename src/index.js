@@ -5,7 +5,9 @@ import NasaImg from './img/nasa-img.jpg';
 import Data from './data/data.xml';
 import Notes from './data/data.csv';
 import DataJSON from './data/data.json';
-
+import toml from './data/data.toml';
+import yaml from './data/data.yaml';
+import json from './data/data.json5';
 
 import { functionOne } from './functionOne';
 import { Player, createMap } from './constructors';
@@ -20,6 +22,9 @@ import('./re-exporting/main.js');
 
 // side-effect import
 import './sideEffect.js';
+
+
+[toml, yaml, json].forEach( data => console.log(data));
 
 function component() {
     const element = document.createElement('div');
