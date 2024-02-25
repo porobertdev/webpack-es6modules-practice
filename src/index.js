@@ -4,6 +4,7 @@ import './style.css';
 import NasaImg from './img/nasa-img.jpg';
 import Data from './data/data.xml';
 import Notes from './data/data.csv';
+import DataJSON from './data/data.json';
 
 
 import { functionOne } from './functionOne';
@@ -34,6 +35,8 @@ function component() {
 
     console.log(Data);
     console.log(Notes);
+    console.log('JSONY')
+    console.log(DataJSON);
 
     return element;
 }
