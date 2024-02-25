@@ -2,6 +2,9 @@
 import _ from 'lodash';
 import './style.css';
 import NasaImg from './img/nasa-img.jpg';
+import Data from './data/data.xml';
+import Notes from './data/data.csv';
+
 
 import { functionOne } from './functionOne';
 import { Player, createMap } from './constructors';
@@ -28,6 +31,9 @@ function component() {
     const img = new Image();
     img.src = NasaImg;
     element.appendChild(img);
+
+    console.log(Data);
+    console.log(Notes);
 
     return element;
 }
